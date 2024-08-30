@@ -1,100 +1,110 @@
-﻿<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>My Profile</title>
-    <style>
-
-        h2 {
+<meta charset="utf-8" />
+<title>My Profile</title>
+<style>
+        body {
             font-family: sans-serif;
-            color: black;
-            font-size: 15px;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-
-        section {
-            /*text-align: center;*/
-
-            margin-top: 10px;
-            color: black;
-        }
-
-        p {
-            color: darkblue;
-        }
-
-        ol {
-            margin-left: 20px;
-            color: darkblue;
-        }
-
-        .profile_photo {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-            .profile_photo img {
-                border: 2px solid black;
-                border-radius: 50%;
-                width: 150px;
-                height: auto;
-            }
-
-        .name {
-            text-align: center;
-        }
-
-        .college {
-            text-align: left;
-            margin-top: 10px;
-            margin-left: 58px;
-            color: black;
-        }
-
-        .skills, .experience {
-            margin: 20px auto;
-            width: 80%;
-            max-width: 600px;
-        }
-
         .main {
             background-color: lightblue;
-            width: 50%;
-            align-content: center;
-            margin: auto;
+            width: 60%;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-    </style>
+        .profile_photo {
+            margin-bottom: 20px;
+        }
+        .profile_photo img {
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 150px;
+            height: auto;
+        }
+        .name {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .college {
+            text-align: center;
+            font-size: 18px;
+            color: black;
+            margin-bottom: 20px;
+        }
+        .info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+            gap: 20px;
+        }
+        .skills, .experience {
+            flex: 1;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: black;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        ol, p {
+            color: darkblue;
+            margin-left: 20px;
+        }
+        ol {
+            padding-left: 20px;
+        }
+</style>
 </head>
 <body>
-    <div class="main">
-        <div class="profile_photo">
-        </div>
-        <h1 class="name">Atulya Gupta</h1>
-        <div class="college">
-
-            B.E - 2024<br />
-
-            DSCE, Bangalore
-        </div>
+<div class="main">
+    <div class="profile_photo">
+        <!-- Add profile image here -->
+        <img src="profile_photo.jpg" alt="Profile Photo">
+    </div>
+    <h1 class="name">Atulya Gupta</h1>
+    <div class="college">
+        B.E - 2024<br />
+        DSCE, Bangalore
+    </div>
+    <div class="info">
         <div class="skills">
             <h2>Skills:</h2>
             <ol>
                 <li>Python</li>
                 <li>C/C++</li>
                 <li>Web Development</li>
-                <li>Java Script</li>
-                <li> React.js</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
             </ol>
         </div>
         <div class="experience">
-            <h2>Internships</h2>
+            <h2>Internships:</h2>
             <p>
-
-                Dover
-                <br>
-
+                Dover<br>
                 My Equation
             </p>
         </div>
     </div>
+</div>
 </body>
 </html>
